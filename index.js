@@ -3,6 +3,8 @@
 
     const localizationMap = {
         "酒馆助手": "Tavern Helper",
+        "扩展已启用": "Extension ON",
+        "扩展已禁用": "Extension OFF",
         "主设置": "Main",
         "渲染器": "Renderer",
         "脚本库": "Library",
@@ -37,6 +39,7 @@
         "脚本可能存在风险，请确保安全后再运行": "Scripts may carry risks. Please ensure they are safe before running.",
         "About Us": "About Us",
         "启用渲染器": "Enable Renderer",
+        "设置需要渲染的楼层数，从最新楼层开始计数。为0时，将渲染所有楼层": "Set the number of messages to render, counting from the latest. Set to 0 to render all messages.",
         "启用后，符合条件的代码块将被渲染": "When enabled, qualifying code blocks will be rendered.",
         "启用代码折叠": "Enable Code Folding",
         "折叠所有代码块，避免正则替换成前端代码时影响阅读": "Folds all code blocks to improve readability when regex replaces them with front-end code.",
@@ -124,10 +127,10 @@
     function runLocalization() {
         const selectors = [
             'b', 'small', 'label', 'a', 'span', 'h3', 'h4', 'div.info-text > div',
-            '.settings-title', '.settings-title-text', '.settings-title-description',
-            '.TavernHelper-button', '.major-divider-text', '.text-decoration',
-            '.dialog-title', '.script-item-name', '.tab-item-text', '.popup-button-ok',
-            '.popup-button-cancel', '.form-span', '.filter-option > label',
+            '#extension-status', '.settings-title', '.settings-title-text',
+            '.settings-title-description', '.TavernHelper-button', '.major-divider-text',
+            '.text-decoration', '.dialog-title', '.script-item-name', '.tab-item-text',
+            '.popup-button-ok', '.popup-button-cancel', '.form-span', '.filter-option > label',
             '.floor-filter-error', '.toast-message'
         ];
 
@@ -162,6 +165,5 @@
     });
 
     runLocalization();
-
 
 })();
