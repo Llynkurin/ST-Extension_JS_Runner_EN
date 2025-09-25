@@ -134,11 +134,9 @@
             '.floor-filter-error', '.toast-message'
         ];
 
-        selectors.forEach(selector => {
-            document.querySelectorAll(selector).forEach(element => {
-                element.childNodes.forEach(child => {
-                    translateNode(child);
-                });
+        document.querySelectorAll(selectors.join(",")).forEach(element => {
+            element.childNodes.forEach(child => {
+                translateNode(child);
             });
         });
 
