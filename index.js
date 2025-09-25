@@ -3,7 +3,7 @@
 
     const localizationMap = {
         "酒馆助手": "Tavern Helper",
-        "主设置": "Main Settings",
+        "主设置": "Main",
         "渲染器": "Renderer",
         "脚本库": "Library",
         "工具箱": "Toolbox",
@@ -162,5 +162,6 @@
     });
 
     runLocalization();
+
 
 })();
