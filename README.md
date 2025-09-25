@@ -1,5 +1,7 @@
 # ST-Extension_JS_Runner_EN
-Attempt to make an ideally updateable localizer for JS runner
+Attempt to make an ideally updateable localizer for JS runner.
+
+My personal disclaimer is that I only know hanzi from Sagwa so this is 80% LLM with some personal adjustments.
 
 ## Requirement
 You actually need the extension itself
